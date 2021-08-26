@@ -1,0 +1,79 @@
+body { 
+    margin: 0; 
+    padding-bottom: 3rem; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.message_form { 
+    background: rgba(0, 0, 0, 0.15); 
+    padding: 0.25rem; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    display: flex; 
+    height: 3rem; 
+    box-sizing: border-box; 
+    backdrop-filter: blur(10px); 
+}
+
+.message_form input { 
+    border: none; 
+    padding: 0 1rem; 
+    flex-grow: 1; 
+    border-radius: 2rem; 
+    margin: 0.25rem; 
+}
+
+.message_form input:focus { 
+    outline: none; 
+}
+
+.message_form button { 
+    background: #333; 
+    border: none; 
+    padding: 0 1rem; 
+    margin: 0.25rem; 
+    border-radius: 3px; 
+    outline: none; 
+    color: #fff; 
+}
+
+.inbox__people {
+    float: left;
+    width: 33.33%;
+    background-color: #F1F1F1;
+    padding: 15px;
+    height: 100%;
+}
+
+.inbox__messages {
+    float: left;
+    width: 66.66%;
+}
+
+.inbox:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#messages { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+#messages > li { 
+    padding: 0.5rem 1rem; 
+}
+
+#messages > li:nth-child(odd) { 
+    background: #efefef; 
+}
